@@ -6,6 +6,13 @@ namespace StudentManagementSystem
         // Fully implemented C# property
         private int _studentId;
 
+        public Student(string fName, string lName, DateTime dob) 
+        {
+            FirstName = fName;
+            LastName = lName;
+            DateOfBirth = dob;
+        }
+
         public int StudentId
         {
             get
@@ -23,7 +30,13 @@ namespace StudentManagementSystem
 
         public string LastName { get; set; }
 
-        public string FullName { get; set; }
+        public string FullName 
+        { 
+            get
+            {
+                return FirstName + " " + LastName;
+            } 
+        }
 
         public DateTime DateOfBirth { get; set; }
 
