@@ -9,6 +9,7 @@ namespace StudentManagementSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Test Code
             Student stu = new Student("Zac", "Kimball", new DateTime(1985, 11, 26));
         }
     }
