@@ -66,7 +66,12 @@ namespace StudentManagementSystem
         /// </summary>
         public DateTime DateOfBirth { get; set; }
 
-        
+        public byte GetAge()
+        { 
+            int yearBorn = DateOfBirth.Year;
+            int currentYear = DateTime.Now.Year;
 
+            return (byte)(currentYear - yearBorn);
+        }
     }
 }
