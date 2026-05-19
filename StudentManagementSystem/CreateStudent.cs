@@ -26,6 +26,7 @@ namespace StudentManagementSystem
             Student stu = new Student(firstName, lastName, dateOfBirth);
 
             StudentDb.Add(stu);
+
             MessageBox.Show("Student added successfully!");
             Close();
 

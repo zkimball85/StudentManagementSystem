@@ -18,7 +18,5 @@ namespace StudentManagementSystem
             CreateStudent newStuForm = new CreateStudent();
             newStuForm.ShowDialog();
         }
-
-        }
     }
 }

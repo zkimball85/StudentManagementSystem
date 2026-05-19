@@ -35,7 +35,7 @@
             // 
             BtnOpenCreateForm.Location = new Point(27, 12);
             BtnOpenCreateForm.Name = "BtnOpenCreateForm";
-            BtnOpenCreateForm.Size = new Size(256, 106);
+            BtnOpenCreateForm.Size = new Size(340, 106);
             BtnOpenCreateForm.TabIndex = 0;
             BtnOpenCreateForm.Text = "Open Create Student Form";
             BtnOpenCreateForm.UseVisualStyleBackColor = true;
@@ -45,7 +45,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(392, 150);
             Controls.Add(BtnOpenCreateForm);
             Name = "Form1";
             Text = "Form1";

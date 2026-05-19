@@ -1,5 +1,4 @@
-﻿
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 
 namespace StudentManagementSystem
 {
@@ -13,7 +12,7 @@ namespace StudentManagementSystem
         public static void Add(Student s)
         {
             // Establish a connection to the database
-            SqlConnection con = new SqlConnection("Data Source=ZACS_WINDOWS;Initial Catalog=SMS;Integrated Security=True;");
+            SqlConnection con = new SqlConnection("Data Source=ZACS_WINDOWS;Initial Catalog=SMS;Integrated Security=True;TrustServerCertificate=True;");
 
             // Prepare an SQL INSERT statement to add the student record
             SqlCommand insertCmd = new SqlCommand();
@@ -25,8 +24,6 @@ namespace StudentManagementSystem
             insertCmd.Parameters.AddWithValue("@FName", s.FirstName);
             insertCmd.Parameters.AddWithValue("@LName", s.LastName);
             insertCmd.Parameters.AddWithValue("@DateOfBirth", s.DateOfBirth);
-
-            // Open the database connection
             con.Open();
 
             // Execute the SQL command to insert the student data
