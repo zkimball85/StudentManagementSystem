@@ -20,9 +20,8 @@ namespace StudentManagementSystem
             insertCmd.Connection = con;
 
             // Parameterized query to prevent SQL injection
-            insertCmd.CommandText = "INSERT INTO Student(StudentId, FName, LName, DateOfBirth)" +
-                "VALUES (@StudentId, @FName, @LName, @DateOfBirth)";
-            insertCmd.Parameters.AddWithValue("@StudentId", s.StudentId);
+            insertCmd.CommandText = "INSERT INTO Student(FName, LName, DateOfBirth)" +
+                "VALUES (@FName, @LName, @DateOfBirth)";
             insertCmd.Parameters.AddWithValue("@FName", s.FirstName);
             insertCmd.Parameters.AddWithValue("@LName", s.LastName);
             insertCmd.Parameters.AddWithValue("@DateOfBirth", s.DateOfBirth);

@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            BtnOpenCreateForm = new Button();
             SuspendLayout();
+            // 
+            // BtnOpenCreateForm
+            // 
+            BtnOpenCreateForm.Location = new Point(27, 12);
+            BtnOpenCreateForm.Name = "BtnOpenCreateForm";
+            BtnOpenCreateForm.Size = new Size(256, 106);
+            BtnOpenCreateForm.TabIndex = 0;
+            BtnOpenCreateForm.Text = "Open Create Student Form";
+            BtnOpenCreateForm.UseVisualStyleBackColor = true;
+            BtnOpenCreateForm.Click += BtnOpenCreateForm_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtnOpenCreateForm);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -42,5 +54,7 @@
         }
 
         #endregion
+
+        private Button BtnOpenCreateForm;
     }
 }
