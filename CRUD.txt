@@ -1,0 +1,29 @@
+CRUD
+Create retrieve update delete
+
+Student Management Systems First Plan
+
+Class-
+
+	-Student
+		-First Name
+		-Last Name
+		-Full Name
+		-Student ID (PK)
+		-Date Of Birth
+			-Get Age ()
+
+	-Student DB
+		-Get All Students ()
+		-Add (student)
+		-Update (student)
+		-Delete (student)
+		-Delete (student ID)
+		-Get Student (student ID)
+
+	-Validator
+		-Is Present (Textbox box)
+		-Is Valid Date (Date Time date)
+	
+		
+	
